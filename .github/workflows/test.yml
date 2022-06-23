@@ -1,0 +1,12 @@
+   on: [workflow_dispatch]
+   
+   jobs:
+     build:
+       runs-on: ubuntu-latest
+       steps:    
+       - uses: deepakjha01-org-1/private-action-and-workflow@main
+   
+     call-workflow:
+       uses: deepakjha01-org-1/private-action-and-workflow/.github/workflows/called-workflow.yml@main
+       with:
+         username: Shinchan
